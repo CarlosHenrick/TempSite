@@ -17,7 +17,7 @@
         // Valida se o parâmetro existe e é uma URL
         if (url && url.startsWith("http://") || url.startsWith("https://")) {
             // Redireciona para o link de intenção
-            window.location.href = `wvc-x-callback://open?url=${encodeURIComponent(url)};end`;
+            window.location.href = `wvc-x-callback://open?url=${encodeURIComponent(url)}`;
         } else {
             // Trata caso não tenha parâmetro ou seja inválido
             console.error("URL não informada ou inválida.");
